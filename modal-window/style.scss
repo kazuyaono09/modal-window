@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* ==================== 色一覧 ==================== */
+$c-text: #3b3b3b;
+$c-white: #ffffff;
+$c-white-hover: #E2E6EA;
+$c-border: #808080;
+$c-placeholder: #999999;
+$c-main: #184C96;
+$c-main-hover: #113569;
+
+/* ==================== 側設定 ==================== */
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+body {
+    position: relative;
+    width: 100%;
+}
+
+/* ============================================================================================================
+                                                メインコンテンツ
+============================================================================================================ */
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 800px;
+  background-color: $c-text;
+  opacity: 0.5;
+  .modal-window {
+    width: 60%;
+    height: 100%;
+    background-color: $c-white;
+    padding: 20px;
+    position: fixed;
+    .modal-btn {
+      width: 30px;
+      height: 30px;
+      margin: 0 0 0 auto;
+      position: relative;
+      .btn01 {
+        width: 30px;
+        height: 2px;
+        background-color: $c-text;
+        border-radius: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+      }
+      .btn02 {
+        width: 30px;
+        height: 2px;
+        background-color: $c-text;
+        border-radius: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+      }
+    }
+    .modal-text {
+
+    }
+  }
+}
